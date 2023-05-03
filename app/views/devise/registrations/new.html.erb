@@ -23,7 +23,7 @@
 
   <div class="field">
     <%= f.label :role %><br/>
-    <%= f.select :role, User.roles.map{ |k,v| [k,k] } %>
+    <%= f.select :role, ApplicationHelper::Roles %>
   </div>
 
   <div class="actions">
